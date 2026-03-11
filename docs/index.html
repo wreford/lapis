@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lapis — A Web Framework for Lua</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f0f7f0;
+      color: #2d4a2d;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .sprout {
+      font-size: 6rem;
+      line-height: 1;
+      animation: sway 3s ease-in-out infinite;
+      display: block;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    @keyframes sway {
+      0%, 100% { transform: rotate(-4deg); }
+      50%       { transform: rotate(4deg); }
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #1a3a1a;
+      letter-spacing: -1px;
+      text-align: center;
+    }
+
+    h1 span {
+      color: #4caf50;
+    }
+
+    .tagline {
+      margin-top: 0.75rem;
+      font-size: 1.15rem;
+      color: #4a6e4a;
+      text-align: center;
+    }
+
+    .badges {
+      display: flex;
+      gap: 0.75rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .badge {
+      background: #fff;
+      border: 2px solid #a5d6a7;
+      border-radius: 999px;
+      padding: 0.35rem 1rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #2e7d32;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2.5rem;
+      width: 100%;
+      max-width: 720px;
+    }
+
+    .feature {
+      background: #fff;
+      border: 1px solid #c8e6c9;
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+    }
+
+    .feature-icon { font-size: 1.75rem; margin-bottom: 0.5rem; }
+    .feature h3  { font-size: 1rem; font-weight: 700; color: #1b5e20; }
+    .feature p   { font-size: 0.875rem; color: #4a6e4a; margin-top: 0.25rem; line-height: 1.5; }
+
+    .cta {
+      margin-top: 2.5rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.7rem 1.75rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
+
+    .btn-primary {
+      background: #4caf50;
+      color: #fff;
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: #2e7d32;
+      border: 2px solid #a5d6a7;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.8rem;
+      color: #7a9e7a;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <span class="sprout">🌱</span>
+
+  <h1>La<span>p</span>is</h1>
+  <p class="tagline">A web framework for <strong>Lua</strong> &amp; <strong>MoonScript</strong> — small, fast, rooted.</p>
+
+  <div class="badges">
+    <span class="badge">Lua 5.1+</span>
+    <span class="badge">MoonScript</span>
+    <span class="badge">OpenResty / nginx</span>
+    <span class="badge">MIT License</span>
+  </div>
+
+  <div class="features">
+    <div class="feature">
+      <div class="feature-icon">⚡</div>
+      <h3>Fast by default</h3>
+      <p>Built on OpenResty — Lua runs inside nginx for native performance.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🗺️</div>
+      <h3>Expressive routing</h3>
+      <p>Clean URL patterns, named captures, and composable route groups.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🛢️</div>
+      <h3>Built-in ORM</h3>
+      <p>Query your PostgreSQL database with a lightweight active-record layer.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🌿</div>
+      <h3>Grows with you</h3>
+      <p>Start with a single file; scale to a full application without rewriting.</p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <a class="btn btn-primary" href="https://leafo.net/lapis/">Documentation</a>
+    <a class="btn btn-secondary" href="https://github.com/leafo/lapis">GitHub</a>
+  </div>
+
+  <footer>
+    &copy; 2013–2026 Leaf Corcoran &mdash; MIT License
+  </footer>
+
+</body>
+</html>
