@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# bin/sprout -- thin wrapper around the LuaJIT-hosted Sprout interpreter.
+here="$(cd "$(dirname "$0")/.." && pwd)"
+exec luajit "$here/init.lua" "$@"

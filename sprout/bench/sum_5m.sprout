@@ -1,0 +1,8 @@
+-- sum 1..5,000,000 -- heavier loop dominates startup
+i   : 1
+sum : 0
+while [(i <= 5000000)] [
+  sum : (sum + i)
+  i   : (i + 1)
+]
+say (sum)

@@ -1,0 +1,2 @@
+-- map a list to its squares and print it
+say ([1 2 3 4 5] map [((@) * (@))])
