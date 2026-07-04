@@ -1,0 +1,22 @@
+{
+  "name": "lapis-video",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Remotion video project",
+  "scripts": {
+    "dev": "remotion studio",
+    "render": "remotion render HelloWorld out/HelloWorld.mp4",
+    "build": "remotion bundle",
+    "upgrade": "remotion upgrade"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "typescript": "^5.8.0"
+  }
+}
